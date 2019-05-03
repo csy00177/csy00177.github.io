@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    h1{
+      border-bottom:5px groove black;
+      margin:0;
+      text-align:center;
+    }
+    ul{
+      border-right: 5px groove black;
+      margin:0;
+      width:200px;
+      display:block;
+    }
+    li{
+      border-bottom: 3px solid black;
+      padding:10px 10px;
+    }
+    a{
+      text-decoration: none;
+    }
+    table th{
+      border: 1px solid black
+    }
+    th, td{
+      padding:10px;
+    }
+    table {
+      table-layout: fixed;
+      width:60%;
+      height: 100px
+      align:center;
+      margin:auto;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid #article{
+      border-right: 5px; color:black;
+    }
+    </style>
+    <title>DOTA2 - 오토체스(조합법 포함)</title>
+  </head>
+  <body>
+    <h1><a href="autochess.html">DOTA2-오토체스</h1></a>
+<div id="grid">
+    <ul>
+      <li><a href="영웅소개.html">영웅 소개</li></a>
+      <li><a href="조합과시너지.html">조합과 시너지</li></a>
+      <li><a href="아이템.html">아이템</li></a>
+      <li><a href="초반 운영법.html">초반 운영법</li></a>
+      <li>중반 운영법</li>
+      <li>후반 운영법</li>
+      <li>그 외</li>
+    </ul>
+    <div id="article">
+      <p style="text-align:center;">
+      <img src="autochesstitle.jpg" style="margin-top:10px;" width="60%">
+    </p>
+      <h2 style="text-align:center;">도타-오토체스 영웅 기본 룰:<br></h2>
+      <p style="text-align:center;">
+      <각 영웅들의 레벨은 판매 가격과 일치한다.><br><2성, 3성으로 조합하면 레벨이 각각 2씩 늘어난다.><br> <유닛을 팔아버릴 때 얻는 골드의 양도 영웅 레벨과 일치한다.
+      ><br><따라서 1성 유닛을 사고 팔면 골드 손해가 없고, 1골드 유닛을 2성으로 만든 후 팔 경우에도 골드 손해가 없지만,><br><2골드 이상의 유닛을 2성 이상으로 조합한 뒤 팔아버리면 골드 손해가 발생한다.><br><예외적으로 요술사를 드루이드 특성을 이용해 2성으로 만든 뒤 팔아버리면 1골드 이득을 볼 수 있다.>
+    </p>
+<h2 style="text-align:center; margin-top:50px;">가격별 영웅 종류</h2>
+<P style="text-align:center; margin-top:-10px;">
+  *상세한 유닛 설명은 각 등급에 링크*
+</p>
+<h3 style="text-align:center;"><a href="https://namu.wiki/w/DOTA%20AUTO%20CHESS/%EC%98%81%EC%9B%85/Common(%241)" target="_blank">Common $1</h3></a>
+<p>
+<table>
+<th>항마사(Anti-Mage)</th> <th>도끼전사(Axe)</th> <th>박쥐기수(Batrider)</th> <th>현상금 사냥꾼(Bounty Hunter)</th>
+<tr>
+<th>태엽장이(Clockwerk)</th> <th>드로우 레인저(Drow Ranger)</th> <th>요술사(Enchantress)</th>
+</tr>
+<tr>
+<th>마르스(Mars)</th> <th>오거 마법사(Ogre Magi)</th> <th>그림자 주술사(Shadow Shaman)</th>
+</tr>
+<tr>
+<th>땜장이(Tinker)</th> <th>타이니(Tiny)</th>  <th>얼음폭군(Tusk)</th>
+</tr>
+</table>
+</p>
+<h3 style="text-align:center; margin-top:50px;"><a href="https://namu.wiki/w/DOTA%20AUTO%20CHESS/%EC%98%81%EC%9B%85/Uncommon(%242)" target="_blank">Uncommon $2</h3></a>
+<p>
+  <table>
+  <th>야수지배자(Beastmaster)</th> <th>혼돈 기사(Chaos Knight</th> <th>수정의 여인(Crystal Maiden)</th> <th>자연의 예언자(Furion)</th>
+  <tr>
+  <th>가면무사(Juggernaut)</th> <th>루나(Luna)</th> <th>미라나(Mirana)</th>
+  </tr>
+  <tr>
+  <th>모플링(Morphling)</th> <th>퍽(Puck)</th> <th>고통의 여왕(Queen of Pain)</th>
+  </tr>
+  <tr>
+  <th>슬라다(Slardar)</th> <th>벌목꾼(Timbersaw)</th>  <th>저주술사(Witch Doctor)</th>
+  </tr>
+  </table>
+</p>
+<h3 style="text-align:center; margin-top:50px;"><a href="https://namu.wiki/w/DOTA%20AUTO%20CHESS/%EC%98%81%EC%9B%85/Rare(%243)" target="_blank">Rare $3</h3></a>
+<p>
+  <table>
+  <th>야수지배자(Beastmaster)</th> <th>혼돈 기사(Chaos Knight)</th> <th>수정의 여인(Crystal Maiden)</th> <th>자연의 예언자(Furion)</th>
+  <tr>
+  <th>아바돈(Abaddon)</th> <th>리나(Lina)</th> <th>늑대인간(Lycan)</th><th>바람순찰자(Windranger)</th>
+  </tr>
+  <tr>
+  <th>전능기사(Omniknight)</th> <th>유령 자객(Phantom Assassin)</th> <th>레이저(Razor)</th>
+  </tr>
+  <tr>
+  <th>그림자 마귀(Shadow Fiend)</th> <th>저격수(Sniper)</th>  <th>테러블레이드(Terrorblade)</th>
+  </tr>
+  <th>나무정령 수호자(Treant Protector)</th> <th>맹독사(Venomancer)</th> <th>바이퍼(Viper)</th>
+  </tr>
+  </table>
+</p>
+<h3 style="text-align:center; margin-top:50px;"><a href="https://namu.wiki/w/DOTA%20AUTO%20CHESS/%EC%98%81%EC%9B%85/Mythic(%244)" target="_blank">Mythic $4</h3></a>
+<p>
+  <table>
+  <th>연금술사(Alchemist)</th> <th>디스럽터(Disruptor)</th> <th>파멸의 사도(Doom)</th> <th>용기사(Dragon Knight)</th>
+  <tr>
+  <th>빛의 수호자(Keeper of the Light)</th> <th>컨카(Kunkka)</th> <th>고독한 드루이드(Lone Druid)</th><th>메두사(Medusa)</th>
+  </tr>
+  <tr>
+  <th>강령사제(Necrophos)</th> <th>암살 기사(Templar Assassin)</th> <th>트롤 전쟁군주(Troll Warlord)</th>
+  </tr>
+  </table>
+</p>
+<h3 style="text-align:center; margin-top:50px;"><a href="https://namu.wiki/w/DOTA%20AUTO%20CHESS/%EC%98%81%EC%9B%85/Legendary(%245)" target="_blank">Legendary $5</h3></a>
+<p>
+  <table>
+  <th>죽음의 예언자(Death Prophet)</th> <th>에니그마(Enigma)</th> <th>자이로콥터(Gyrocopter)</th> <th>리치(Lich)</th>
+  <tr>
+  <th>기술단(Techies)</th> <th>파도사냥꾼(Tidehunter)</th> <th>제우스(Zeus)</th>
+</tr>
+  </table>
+</p>
+<h2 style="text-align:center; margin-top:80px;">등급별 영웅 개수</h2>
+<p style="text-align:center;"><00총 체스 말의 개수는 게임내 모든 플레이어가 공유한다
+플레이어가 팔아버린 영웅이나 플레이어가 사망했을 때 가지고 있던 영웅은 다시 다른 플레이어에게 풀린다></p>
+<p>
+  <table width="500px">
+    <tr bgcolor="lightgray">
+  <th>가격</th> <th>개수</th>
+</tr>
+  <tr>
+  <th width="40">$1</th> <th width="100">각 영웅당 총 45개</th>
+</tr>
+<tr>
+  <th>$2</th> <th>각 영웅당 총 30개</th>
+</tr>
+<tr>
+  <th>$3</th> <th>각 영웅당 총 25개</th>
+</tr>
+<tr>
+  <th>$4</th> <th>각 영웅당 총 15개</th>
+</tr>
+<tr>
+  <th>$5</th> <th>각 영웅당 총 10개</th>
+</tr>
+  </table>
+</p>
+  <h2 style="text-align:center; margin-top:80px;">가격별 영웅 등장확률</h2>
+  <p style="text-align:center;"><이오의 경우 독립 확률이 적용되며, 짐꾼이 1레벨일 때부터 등장할 수 있다.><br>
+<이오가 등장할 확률은 0.3%이다. 따라서 체스말 상점에 나타나는 5개의 체스말 중 이오가 적어도 1개 이상 포함될 확률은 1.5%이다.></p>
+  <p>
+    <table>
+      <tr bgcolor="lightgray">
+    <th>짐꾼레벨</th> <th>Common($1)</th> <th>Uncommon($2)</th> <th>Rare($3)</th>
+    <th>Mythic($4)</th> <th>Legendary($5)</th></tr>
+    <tr>
+    <th>1</th> <th>100%</th> <th>0%</th><th>0%</th><th>0%</th><th>0%</th>
+    </tr>
+    <tr>
+    <th>2</th> <th>70%</th> <th>30%</th><th>0%</th><th>0%</th><th>0%</th>
+    </tr>
+    <tr>
+    <th>3</th> <th>60%</th> <th>35%</th><th>5%</th><th>0%</th><th>0%</th>
+    </tr>
+    <tr>
+    <th>4</th> <th>50%</th> <th>35%</th><th>15%</th><th>0%</th><th>0%</th>
+    </tr>
+  <tr>
+  <th>5</th> <th>40%</th> <th>35%</th><th>23%</th><th>2%</th><th>0%</th>
+  </tr>
+<tr>
+<th>6</th> <th>33%</th> <th>30%</th><th>30%</th><th>7%</th><th>0%</th>
+</tr>
+<th>7</th> <th>30%</th> <th>30%</th><th>30%</th><th>10%</th><th>0%</th>
+<tr>
+</tr>
+<th>8</th> <th>24%</th> <th>30%</th><th>30%</th><th>15%</th><th>1%</th>
+</tr>
+<tr>
+<th>9</th> <th>22%</th> <th>30%</th><th>25%</th><th>20%</th><th>3%</th>
+</tr>
+<tr>
+<th>10</th> <th>19%</th> <th>25%</th><th>25%</th><th>25%</th><th>6%</th>
+</tr>
+
+    </table>
+  </p>
+
+<p>
+    <h3 style="text-decoration:bold; text-align:center; margin-top:140px;">
+      도움이 될만한 링크들
+    </h3>
+    <p style="text-align:center;">
+      유닛 티어리스트:<br>
+       <a href="https://qihl.gg/tierlist" target="_blank">https://qihl.gg/tierlist</a>
+     </p>
+     <p style="text-align:center; margin-top:20px;">
+      전적 확인 사이트:<br>
+       <a href="https://autochess.op.gg/" target="_blank">https://autochess.op.gg/</a><br>
+       <a href="http://www.autochess-stats.com/" target="_blank">http://www.autochess-stats.com/</a>
+    </p>
+</div>
+</div>
+  </body>
+</html>

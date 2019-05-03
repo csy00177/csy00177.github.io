@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    h1{
+      border-bottom: 5px solid black;
+      margin:0;
+      text-align:center;
+    }
+    a{
+      text-decoration:none;
+    }
+    ul{
+      border-right: 5px groove black;
+      margin:0;
+      width:200px;
+      display:block;
+    }
+    li{
+      border-bottom: 3px solid black;
+      padding:10px 10px;
+    }
+    table th{
+      border: 1px solid black
+    }
+    th, td{
+      padding:10px;
+    }
+    table {
+      align:center;
+      margin:auto;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid #article{
+      border-right: 5px; color:black;
+    }
+    </style>
+    <title>DOTA2 - 오토체스(조합법 포함)</title>
+  </head>
+  <body>
+    <h1><a href="autochess.html">DOTA2-오토체스</h1></a>
+<div id="grid">
+    <ul>
+      <li><a href="영웅소개.html">영웅 소개</li></a>
+      <li><a href="조합과시너지.html">조합과 시너지</li></a>
+      <li><a href="아이템.html">아이템</li></a>
+      <li><a href="초반 운영법.html">초반 운영법</li></a>
+      <li>중반 운영법</li>
+      <li>후반 운영법</li>
+      <li>그 외</li>
+    </ul>
+    <div id="article">
+      <p style="text-align:center;">
+    </p>
+      <h2 style="text-align:center;">오토체스 아이템 룰:<br></h2>
+      <p style="text-align:center;">
+      <1~3라운드, 그리고 이후 10라운드부터 5라운드 단위로 나타나는 크립 웨이브를 처치하면<br> 일정 확률로 드랍되는 아이템이다.
+><br><체스말에게 장착시킬 수 있지만 이미 장착된 아이템은 빼는 게 불가능해지니 주의><br> <장착된 아이템을 다른 유닛에게 주고 싶으면 장착하고 있는 유닛을 판매하는 수밖에 없다.><br><이하의 조합식에 맞는 아이템을 가지고 있을 경우 조합이 가능하다.><br><체스 플레이어가 소지 시에는 즉시 조합되나, 체스말의 소지품 칸에 있는 경우에는 1턴 뒤에 조합이 된다><br><조합을 원하지 않는 아이템의 경우 조합 방지를 눌러놓으면 조합이 되지 않는다.><br><조합 방지를 걸어놓는 것이 귀찮다면 아이템을 체스판 위의 적절한 위치에 던져놓아도 된다><br><아이템은 라운드가 지나더라도 사라지지 않는다><br><이미 조합이 된 아이템이더라도 짐꾼이 해당 아이템을 가지고 있다면 조합 이전으로 분해할 수 있다 ><br><아이템을 가지고 있던 플레이어가 죽으면 해당 플레이어의 아이템이 모든 체스판에 흩뿌려지게 된다><br><체스말이 2성이나 3성으로 조합되면 소지품 칸에 있던 아이템도 동시에 조합된다.>
+    </p>
+<h2 style="text-align:center; margin-top:50px;">일반 아이템</h2>
+<P style="text-align:center; margin-top:-10px;">
+</p>
+<div style="width:49%;float:left;">
+<p>
+<table id="tbl1" style="width:75%; margin-left:180px; margin-top:50px;">
+  <tr bgcolor="lightgray">
+<th>이름</th> <th>효과</th> <th>티어</th>
+</tr>
+<tr>
+<th><img src="갈퀴발톱.png" width="50%"><br>갈퀴 발톱<br>(Attack Blade)</th><th>공격력 +10</th><th>1</th>
+</tr>
+<tr>
+<th><img src="황폐석.png" width="50%"><br>황폐석<br>(Blight Stone)</th><th>일반 공격 대상의 방어력 -3<br>
+(동일 아이템 중복 적용 불가)</th><th>1</th>
+</tr>
+<tr>
+<th><img src="사슬갑옷.png" width="50%"><br>사슬갑옷<br>(Chain Mail)</th><th>방어력 +5</th><th>1</th>
+</tr>
+<tr>
+<th><img src="망토.png" width="50%"><br>망토<br>(Clock)</th><th>마법 저항력 +15%</th><th>1</th>
+</tr>
+<tr>
+<th><img src="왕관.png" width="50%"><br>왕관<br>(Crown)</th><th>공격 시 마나 획득량 +50%<br>
+(동일 아이템 계열 중복 적용 불가)</th><th>1</th>
+</tr>
+<tr>
+<th><img src="섬뜩한가면.png" width="50%"><br>섬뜩한 가면<br>(Morbid Mask)</th><th>(일반 공격)흡혈 +5%</th><th>1</th>
+</tr>
+<tr>
+<th><img src="전투지팡이.png" width="50%"><br>전투 지팡이<br>(Quarterstaff)</th><th>공격력 +5, 공격 속도 +10</th><th>1</th>
+</tr>
+<tr>
+<th><img src="재생의반지.png" width="50%"><br>재생의 반지<br>(Ring of Regeneration)</th><th>체력 재생 +5</th><th>1</th>
+</tr>
+<tr>
+<th><img src="체력반지.png" width="50%"><br>체력 반지<br>(Ring of Health)</th><th>체력 재생 +10</th><th>1</th>
+</tr>
+<tr>
+<th><img src="법사의로브.png" width="50%"><br>법사의 로브<br>(Robe of the Magi)</th><th>공격 대상의 마법 저항력 -30%<br>
+(동일 아이템 중복 적용 불가)</th><th>1</th>
+</tr>
+<tr>
+<th><img src="튼튼한방패.png" width="50%"><br>튼튼한 방패<br>(Stout Shield)</th><th>피해 10 방어<br>
+(동일 아이템 계열 중복 적용 불가)
+</th><th>1</th>
+</tr>
+<tr>
+<th><img src="공허석.png" width="50%"><br>공허석<br>(Void Stone)</th><th>공격 시 마나 획득량 +100%<br>
+(동일 아이템 계열 중복 적용 불가)
+</th><th>1</th>
+</tr>
+</table>
+</p>
+</div>
+<div style="width:49%;float:right;"
+<p>
+<table id="tbl2" style="width:90%; margin-top:50px; margin-right:68px;" >
+  <tr bgcolor="lightgray">
+<th>이름</th> <th>효과</th> <th>티어</th>
+</tr>
+<tr>
+<th><img src="점멸단검.png" width="50%"><br>점멸 단검<br>(Blink Dagger)</th><th>같은 열에서 비어있는 최후방 칸으로 순간이동</th><th>2</th>
+</tr>
+<tr>
+<th><img src="장검.png" width="50%"><br>장검<br>(Broad Sword)</th><th>공격력 +20</th><th>2</th>
+</tr>
+<tr>
+<th><img src="투창.png" width="50%"><br>투창<br>(Javelin)</th><th>방어력 +5</th><th>2</th>
+</tr>
+<tr>
+<th><img src="미스릴망치.png" width="50%"><br>미스릴 망치<br>(Mithril Hammer)</th><th>공격력 +15</th><th>2</th>
+</tr>
+<tr>
+<th><img src="판금갑옷.png" width="50%"><br>판금갑옷<br>(Plate Mail)</th><th>방어력 +10</th><th>2</th>
+</tr>
+<tr>
+<th><img src="마법의지팡이.png" width="50%"><br>마법의 지팡이<br>(Staff of Wizardry)</th><th>일반 공격 대상의 마법 저항력 -30%<br>
+(동일 아이템 중복 적용 불가)</th><th>2</th>
+</tr>
+<tr>
+<th><img src="활력강화석.png" width="50%"><br>활력 강화석<br>(Vitality Booster)</th><th>HP +250</th><th>2</th>
+</tr>
+</table>
+</p>
+</div>
+
+
+<p>
+<table style="width:45%">
+  <tr bgcolor="lightgray">
+<th>이름</th> <th>효과</th> <th>티어</th>
+</tr>
+<tr>
+<th><img src="악마의검.png" width="50%"><br>악마의 검<br>(Demon Edge)</th><th>공격력 +30
+</th><th>3</th>
+</tr>
+<tr>
+<th><img src="극도석.png" width="50%"><br>극도석<br>(Hyperstone)</th><th>공격력 +20</th><th>3</th>
+</tr>
+<tr>
+<th><img src="궁극구.png" width="50%"><br>궁극구<br>(Ultimate Orb)</th><th>HP +250, 피격 시 마나 획득량 +25%<br>
+(동일 아이템 중복 적용 불가)</th><th>3</th>
+</tr>
+</table>
+</p>
+
+<p>
+<table style="width:45%">
+  <tr bgcolor="lightgray">
+<th>이름</th> <th>효과</th> <th>티어</th>
+</tr>
+<tr>
+<th><img src="신비의지팡이.png" width="50%"><br>신비의 지팡이<br>(Mystic Staff)</th><th>공격 대상의 마법 저항력 -40%<br>
+공격 시 마나 획득량 +100%<br>
+(동일 아이템 계열 중복 적용 불가)</th><th>4</th>
+</tr>
+<tr>
+<th><img src="재앙의도끼.png" width="50%"><br>재앙의 도끼<br>(Reaver)</th><th>HP +500, 체력 재생 +10</th><th>4</th>
+</tr>
+<tr>
+<th><img src="성스러운유물.png" width="50%"><br>성스러운 유물<br>(Sacred Relic)</th><th>공격력 +50</th><th>4</th>
+</tr>
+</table>
+</p>
+
+
+<h2 style="text-align:center; margin-top:90px;">조합 아이템</h2>
+<P style="text-align:center; margin-top:-10px;">
+</p>
+<p>
+<table width="1200" height="200" style="margin-top:50px;">
+  <tr bgcolor="lightgray">
+<th>이름</th> <th>효과</th> <th>재료</th>
+</tr>
+<tr>
+<th><img src="돌격흉갑.png" width="50%"><br>돌격 흉갑<br>(Assault Cuirass)</th><th>오라: 1칸 내 아군 유닛에게 방어력 +10, 공격 속도 +10% 부여<br>
+오라: 1칸 내 적군 유닛에게 방어력 -10, 공격 속도 -10% 부여<br>
+(동일 아이템 중복 적용 불가)</th><th><img src="극도석.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="사슬갑옷.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="판금갑옷.png" width="15%"></th>
+</tr>
+<tr>
+<th><img src="전장격노.png" width="50%"><br>전장 격노<br>(Battle Fury)</th><th>공격력 +30<br>
+근접 공격이 2칸 이내 영역에 30%의 순수 피해를 줌(동일 아이템 중복 적용 가능)<br>
+체력 재생 +10<br>
+공격 시 마나 획득량 +100%(동일 아이템 계열 중복 적용 불가)</th><th><img src="인내의반지.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="악마의검.png" width="15%">
+</tr>
+<tr>
+<th><img src="칼날갑옷.png" width="50%"><br>칼날 갑옷<br>(Blade Mail)</th><th>방어력 +5, 공격력 +10<br>
+받은 피해의 100%를 공격자에게 순수 피해로 되돌림(4초 동안 지속)<br>
+(동일 아이템 중복 적용 가능)<br>
+공격 시 마나 획득량 +100%(동일 아이템 계열 중복 적용 불가)</th><th><img src="장검.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="사슬갑옷.png" width="15%">
+</tr>
+<tr>
+<th><img src="수정검.png" width="50%"><br>수정검<br>(Crystalys)</th><th>공격력 +15. 매 공격 시 20%의 확률로 1.5배의 피해를 줌</th><th><img src="갈퀴발톱.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="장검.png" width="15%">
+</tr>
+<tr>
+<th><img src="다이달로스.png" width="50%"><br>다이달로스<br>(Daedalus)</th><th>공격력 +40, 매 공격 시 10%의 확률로 4배의 피해를 줌</th><th><img src="수정검.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="악마의검.png" width="15%">
+</tr>
+<tr>
+<th><img src="다곤1.png" width="50%"><br>다곤 1<br>(Dagon 1)</th><th>일반 공격 대상의 마법 저항력 -30%, 공격 시 마나 획득량 +50%<br>
+(동일 아이템 계열 중복 적용 불가)<br>
+자동 시전: 무작위 적 하나에게 400의 피해를 줌. 쿨다운 15초
+</th><th><img src="마법의지팡이.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="왕관.png" width="15%">
+</tr>
+<tr>
+<th><img src="다곤2.png" width="50%"><br>다곤 2<br>(Dagon 2)</th><th>일반 공격 대상의 마법 저항력 -60%, 공격 시 마나 획득량 +50%<br>
+(동일 아이템 계열 중복 적용 불가)<br>
+자동 시전: 무작위 적 하나에게 500의 피해를 줌. 쿨다운 12초</th><th><img src="마법의지팡이.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="다곤1.png" width="15%">
+</tr>
+<tr>
+<th><img src="다곤3.png" width="50%"><br>다곤 3<br>(Dagon 3)</th><th>일반 공격 대상의 마법 저항력 -90%, 공격 시 마나 획득량 +50%<br>
+(동일 아이템 계열 중복 적용 불가)<br>
+자동 시전: 무작위 적 하나에게 600의 피해를 줌. 쿨다운 9초</th><th><img src="마법의지팡이.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="다곤2.png" width="15%">
+</tr>
+<tr>
+<th><img src="다곤4.png" width="50%"><br>다곤 4<br>(Dagon 4)</th><th>일반 공격 대상의 마법 저항력 -120%, 공격 시 마나 획득량 +50%<br>
+(동일 아이템 계열 중복 적용 불가)<br>
+자동 시전: 무작위 적 하나에게 700의 피해를 줌. 쿨다운 6초</th><th><img src="마법의지팡이.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="다곤3.png" width="15%">
+</tr>
+<tr>
+<th><img src="다곤5.png" width="50%"><br>다곤 5<br>(Dagon 5)</th><th>일반 공격 대상의 마법 저항력 -150%, 공격 시 마나 획득량 +50%<br>
+(동일 아이템 계열 중복 적용 불가)<br>
+자동 시전: 무작위 적 하나에게 800의 피해를 줌. 쿨다운 3초</th><th><img src="마법의지팡이.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="다곤4.png" width="15%">
+</tr>
+<tr>
+<th><img src="심판도.png" width="50%"><br>심판도<br>(Desolator)</th><th>공격력 +30, 일반 공격 대상의 방어력 -15<br>
+(동일 아이템 중복 적용 불가)</th><th><img src="황폐석.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="미스릴망치.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="미스릴망치.png" width="15%">
+</tr>
+<tr>
+<th><img src="신의양날검.png" width="50%"><br>신의 양날검<br>(Divine Rapier)</th><th>공격력 +150</th><th><img src="악마의검.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="성스러운유물.png" width="15%">
+</tr>
+<tr>
+<th><img src="타라스크의심장.png" width="50%"><br>타라스크의 심장<br>(Heart of Tarrasque)</th><th>최대 체력 +1200, 1초마다 최대 체력의 1% 재생</th><th><img src="재앙의도끼.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="활력강화석.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="활력강화석.png" width="15%">
+</tr>
+<tr>
+<th><img src="도전의두건.png" width="50%"><br>도전의 두건<br>(Hood of Defiance)</th><th>체력 재생 +15, 마법 저항력 +30%</th><th><img src="망토.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="체력반지.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="재생의반지.png" width="15%">
+</tr>
+<tr>
+<th><img src="카야.png" width="50%"><br>카야<br>(Kaya)</th><th>일반 공격 대상의 마법 저항력 -100%<br>
+(동일 아이템 중복 적용 불가)</th><th><img src="법사의로브.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="마법의지팡이.png" width="15%">
+</tr>
+<tr>
+<th><img src="광기의가면.png" width="50%"><br>광기의 가면<br>(Mask of Madness)</th><th>흡혈 +10%, 공격 속도 +30<br>
+착용자를 침묵시킴(패시브는 유지)</th><th><img src="섬뜩한가면.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="전투지팡이.png" width="15%">
+</tr>
+<tr>
+<th><img src="혼돈의망치.png" width="50%"><br>혼돈의 망치<br>(Maelstrom)</th><th>공격력 +25<br>
+공격 시 25% 확률로 최대 3명에게 100의 피해를 주는 번개 발사<br>
+(동일 아이템 중복 적용 가능)</th><th><img src="투창.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="미스릴망치.png" width="15%">
+</tr>
+<tr>
+<th><img src="묠니르.png" width="50%"><br>묠니르<br>(Mjollnir)</th><th>공격력 +50, 공격 속도 +30<br>
+공격 시 25% 확률로 최대 5명의 적에게 200의 피해를 주는 번개 발사<br>
+(동일 아이템 중복 적용 가능)</th><th><img src="혼돈의망치.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="극도석.png" width="15%">
+</tr>
+<tr>
+<th><img src="여의봉.png" width="50%"><br>여의봉<br>(Monkey King Bar)</th><th>공격력 +80, 공격 속도 +10<br>
+공격이 회피를 무시하고 반드시 적중</th><th><img src="악마의검.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="투창.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="전투지팡이.png" width="15%">
+</tr>
+<tr>
+<th><img src="달조각.png" width="50%"><br>달 조각<br>(Moon Shard)</th><th>공격 속도 +70</th><th><img src="극도석.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="극도석.png" width="15%">
+</tr>
+<tr>
+<th><img src="인내의반지.png" width="50%"><br>인내의 반지<br>(Perseverance)</th><th>체력 재생 +10, 공격할 때 회복하는 마나량 +100%<br>
+(동일 아이템 계열 중복 적용 불가)</th><th><img src="체력반지.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="공허석.png" width="15%">
+</tr>
+<tr>
+<th><img src="재생의구슬.png" width="50%"><br>재생의 구슬<br>(Refresher Orb)</th><th>체력 재생 +20<br>
+공격할 때 회복하는 마나량 +200%<br>
+(동일 아이템 중복 적용 불가)<br>
+첫 번째 스킬 시전 시 해당 스킬 쿨다운 초기화. 쿨다운 30초</th><th><img src="인내의반지.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="인내의반지.png" width="15%">
+</tr>
+<tr>
+<th><img src="바이스의낫.png" width="50%"><br>바이스의 낫<br>(Scythe of Vyse)</th><th>공격 시 대상의 마법 저항력 -20%<br>
+공격하거나 공격받을 때 회복하는 마나량 +50%<br>
+(동일 아이템 계열 중복 적용 불가)<br>
+최대 체력 +250. 적 하나를 8초 동안 양으로 만든다.</th><th><img src="신비의지팡이.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="궁극구.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="공허석.png" width="15%">
+</tr>
+<tr>
+<th><img src="선봉방패.png" width="50%"><br>선봉 방패<br>(Vanguard)</th><th>최대 체력 +250, 체력 재생 +10<br>
+공격받을 때 50% 확률로 해당 피해 50만큼 감소<br>
+(동일 아이템 계열 중복 적용 불가)</th><th><img src="활력강화석.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="튼튼한방패.png" width="15%">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;<img src="체력반지.png" width="15%">
+</tr>
+</table>
+</p>
+
+
+
+
+<h2 style="text-align:center; margin-top:90px;">아이템 티어별 드랍확률과 크립정보</h2>
+<div style="width:40%;float:left;"
+<p>
+  <table style="width:70%; margin-top:50px; margin-left:300px;">
+    <tr bgcolor="lightgray">
+  <th>크립레벨</th> <th>1티어</th> <th>2티어</th> <th>3티어</th>
+  <th>4티어</th></tr>
+  <tr>
+  <th>1</th> <th>20%</th> <th>0%</th><th>0%</th><th>0%</th>
+  <tr>
+  <th>2</th> <th>40%</th> <th>0%</th><th>0%</th><th>0%</th>
+  </tr>
+  <tr>
+  <th>3</th> <th>50%</th> <th>0%</th><th>0%</th><th>0%</th>
+  </tr>
+  <tr>
+  <th>4</th> <th>40%</th> <th>20%</th><th>0%</th><th>0%</th>
+  </tr>
+<tr>
+<th>5</th> <th>20%</th> <th>40%</th><th>0%</th><th>0%</th>
+</tr>
+<tr>
+<th>6</th> <th>30%</th> <th>30%</th><th>10%</th><th>0%</th>
+</tr>
+<th>7</th> <th>30%</th> <th>30%</th><th>20%</th><th>0%</th>
+<tr>
+</tr>
+<th>8</th> <th>20%</th> <th>40%</th><th>30%</th><th>10%</th>
+<tr>
+</tr>
+<th>9</th> <th>10%</th> <th>40%</th><th>30%</th><th>20%</th>
+<tr>
+  </table>
+</p>
+</div>
+<div style="width:60%;float:right;">
+<p>
+  <table style="margin-top:50px; width:60%;">
+    <tr bgcolor="lightgray">
+  <th>라운드</th> <th style="width:50%">크립이름</th> <th>크립 레벨</th> <th>생성 수</th>
+</tr>
+  <tr>
+  <th>1</th> <th><img src="radiantcreep.png" width="30%">Radiant Creep</th> <th>1</th><th>2</th>
+  </tr>
+  <tr>
+  <th>2</th> <th><img src="radiantrangedcreep.png" width="30%">Radiant Ranged Creep<br><img src="radiantcreep.png" width="30%">Radiant Mega Creep</th> <th>1<br>2</th><th>2<br>1</th>
+  </tr>
+  <tr>
+  <th>3</th> <th><img src="radiantcreep.png" width="30%">Radiant Creep<br><img src="radiantmegacreep.png" width="30%">Radiant Mega Creep</th> <th>1<br>2</th><th>2<br>2</th>
+  </tr>
+  <tr>
+  <th>30</th> <th><img src="golem.jpg" width="30%"><br>Golem<br>Golem</th> <th>3<br>4</th><th>2<br>1</th>
+  </tr>
+<tr>
+<th>15</th> <th><img src="wolf.png" width="30%"><br>Wolf<br>Alpha Wolf</th> <th>3<br>5</th><th>4<br>1</th>
+</tr>
+<tr>
+<th>30</th> <th><img src="hellbear1.png" width="30%">Hellbear<br><img src="hellbear2.png" width="30%">Hellbear</th> <th>5<br>5</th><th>1<br>1</th>
+</tr>
+<tr>
+<th>25</th> <th><img src="wildwing1.png" width="30%">Wildwing<br><img src="wildwing2.png" width="30%">Wildwing Ripper</th> <th>6<br>6</th><th>1<br>1</th>
+</tr>
+<tr>
+<th>30</th> <th><img src="thunderhide1.jpg" width="30%">Thunderhide<br><img src="thunderhide2.jpg" width="30%">Thunderhide</th> <th>6<br>7</th><th>2<br>1</th>
+</tr>
+<tr>
+<th>35</th> <th><img src="blackdragon.jpg" width="30%">Black Dragon</th> <th>8</th><th>1</th>
+</tr>
+<tr>
+<th>40</th> <th><img src="troll.png" width="30%">Troll Axe Flinger<br>Fiery Troll Foreman<br>Frosty Troll Foreman</th> <th>5<br>7<br>7<br></th><th>4<br>1<br>1<br></th>
+</tr>
+<tr>
+<th>45</th> <th><img src="yearbeast.png" width="30%">Year Beast</th> <th>9</th><th>1</th>
+</tr>
+<tr>
+<th>50</th> <th><img src="roshan.png" width="30%">Roshan</th> <th>9</th><th>1</th>
+</tr>
+  </table>
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div style="margin-left:370px;">
+<p>
+    <h3 style="text-decoration:bold; text-align:center; margin-top:800px;">
+      도움이 될만한 링크들
+    </h3>
+    <p style="text-align:center;">
+      유닛 티어리스트:<br>
+       <a href="https://qihl.gg/tierlist" target="_blank">https://qihl.gg/tierlist</a>
+     </p>
+     <p style="text-align:center; margin-top:20px;">
+      전적 확인 사이트:<br>
+       <a href="https://autochess.op.gg/" target="_blank">https://autochess.op.gg/</a><br>
+       <a href="http://www.autochess-stats.com/" target="_blank">http://www.autochess-stats.com/</a>
+    </p>
+    </div>
+</div>
+</div>
+  </body>
+</html>
